@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 :root {
     --primary-color: #000;
     --secondary-color: #fff;
     --text-color: #fff;
+=======
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --text-color: #fff;
+>>>>>>> 452edc6e578ed2da6250f06b409a465389a78802
 }
