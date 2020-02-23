@@ -6,7 +6,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     transition: 1s;
-
+//Header style
     .banner {
         z-index: 400;
         height: 100px;
@@ -23,7 +23,7 @@ body {
         line-height: 100px;
         border-bottom: 2px solid var(--secondary-color);
     }
-
+/*Menü style*/
     .sidebar{
         z-index: 500;
         position: fixed;
@@ -42,6 +42,7 @@ body {
             padding-bottom: 10px
         }
     }
+/*Margin-container für Menü und header*/
     .main-shell {
         margin-top: 100px;
         margin-left: 230px;

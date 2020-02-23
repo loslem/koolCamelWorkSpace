@@ -1,11 +1,11 @@
-body {
+body {/*Normaler body*/
     --primary-color: #000;
     --secondary-color: #fff;
     --text-color: #fff;
-    --bg-img: url(./../grafics/bg.jpg)
+    --bg-img: url(./../grafics/bg.jpg)/*Pfad zum Hintergrundbild*/
 }
 
-body.light {
+body.light {/*Body mit der Klasse light*/
     --primary-color: #fff;
     --secondary-color: #000;
     --text-color: #000;
