@@ -9,8 +9,11 @@
     <link rel="stylesheet" href="./styles/colors.css">
     <title>Document</title>
 </head>
-<body style="background-image: url(./grafics/bg.jpg);">
-    <div class="banner">Loslem Ipsum</div>
+<body>
+    <header id="header" class="banner">
+        Loslem Ipsum
+        <label><div class="toggleswitch btn btn-primary" onclick="toggledark()">Darkmode</div></label>
+    </header>
     <div class="sidebar">
         <div><a href="#1" onclick="navscroll('t1')">thema 1</a></div>
         <div><a href="#2" onclick="navscroll('t2')">thema 2</a></div>
@@ -18,35 +21,67 @@
         <div><a href="#4" onclick="navscroll('t4')">thema 4</a></div>
         <div><a href="#5" onclick="navscroll('t5')">thema 5</a></div>
     </div>
-    <div class="main-content container">
-        <div class="thema" id="t1">
-            <h1>Thema 1</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugit magni consequatur, aut, nam velit at reiciendis explicabo qui reprehenderit tenetur voluptatem recusandae ad, et harum. Quasi voluptatibus atque optio?</p>
+    <main class="main-shell">
+        <div class="main-content container">
+            <div class="thema" id="t1">
+                <h1>Thema 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugit magni consequatur, aut, nam velit at reiciendis explicabo qui reprehenderit tenetur voluptatem recusandae ad, et harum. Quasi voluptatibus atque optio?</p>
+            </div>
+            <hr/>
+            <div class="thema" id="t2">
+                <h1>Thema 2</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugit magni consequatur, aut, nam velit at reiciendis explicabo qui reprehenderit tenetur voluptatem recusandae ad, et harum. Quasi voluptatibus atque optio?</p>
+            </div>
+            <hr/>
+            <div class="thema" id="t3">
+                <h1>Thema 3</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugit magni consequatur, aut, nam velit at reiciendis explicabo qui reprehenderit tenetur voluptatem recusandae ad, et harum. Quasi voluptatibus atque optio?</p>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./grafics/bootstar.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./grafics/bootstar.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./grafics/bootstar.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            </div>
+            <hr/>
+            <div class="thema" id="t4">
+                <h1>Thema 4</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugit magni consequatur, aut, nam velit at reiciendis explicabo qui reprehenderit tenetur voluptatem recusandae ad, et harum. Quasi voluptatibus atque optio?</p>
+                <iframe width="900" height="506" src="https://www.youtube.com/embed/RiWxhm5ZdFM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <hr/>
+            <div class="thema" id="t5">
+                <h1>Thema 5</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugit magni consequatur, aut, nam velit at reiciendis explicabo qui reprehenderit tenetur voluptatem recusandae ad, et harum. Quasi voluptatibus atque optio?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla facilis, ullam eos accusantium dolorum nihil molestiae doloremque. Ab asperiores totam voluptatibus id repudiandae aspernatur aliquam quae expedita? Aspernatur, facere quaerat?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, earum vero. Similique, molestias. Explicabo, tempora! Alias aperiam praesentium consequuntur voluptas labore, numquam obcaecati non minus quas molestias pariatur temporibus enim?</p>
+            </div>
+            <hr/>
         </div>
-        <hr/>
-        <div class="thema" id="t2">
-            <h1>Grafik</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugit magni consequatur, aut, nam velit at reiciendis explicabo qui reprehenderit tenetur voluptatem recusandae ad, et harum. Quasi voluptatibus atque optio?</p>
-        </div>
-        <hr/>
-        <div class="thema" id="t3">
-            <h1>Frauentausch</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugit magni consequatur, aut, nam velit at reiciendis explicabo qui reprehenderit tenetur voluptatem recusandae ad, et harum. Quasi voluptatibus atque optio?</p>
-        </div>
-        <hr/>
-        <div class="thema" id="t4">
-            <h1>Mittelalterliche europäische Rüstungen</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugit magni consequatur, aut, nam velit at reiciendis explicabo qui reprehenderit tenetur voluptatem recusandae ad, et harum. Quasi voluptatibus atque optio?</p>
-        </div>
-        <hr/>
-        <div class="thema" id="t5">
-            <h1>Main</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugit magni consequatur, aut, nam velit at reiciendis explicabo qui reprehenderit tenetur voluptatem recusandae ad, et harum. Quasi voluptatibus atque optio?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla facilis, ullam eos accusantium dolorum nihil molestiae doloremque. Ab asperiores totam voluptatibus id repudiandae aspernatur aliquam quae expedita? Aspernatur, facere quaerat?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, earum vero. Similique, molestias. Explicabo, tempora! Alias aperiam praesentium consequuntur voluptas labore, numquam obcaecati non minus quas molestias pariatur temporibus enim?</p>
-        </div>
-        <hr/>
-    </div>
+    </main>
+    <footer>
+        Kontakt:
+    </footer>
 
     <script src="./scripts/jquery.js"></script>
     <script src="./scripts/bootstrap.min.js"></script>
