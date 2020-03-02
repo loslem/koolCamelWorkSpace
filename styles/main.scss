@@ -5,7 +5,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    transition: 1s;
 //Header style
     .banner {
         z-index: 400;
@@ -15,7 +14,7 @@ body {
         left: 0;
         right: 0;
         top:0;
-        color:var(--secondary-color);
+        color:var(--text-color);
         font-family: helvetica;
         text-align: center;
         font-size: 40px;
@@ -33,19 +32,21 @@ body {
         top: 70px;
         background-color: var(--primary-color);
         border: 1px solid var(--secondary-color);
+        border-bottom: 1px solid transparent;
         padding: 10px;
         padding-left: 30px;
 
         a {
             display: list-item;
-            color:var(--secondary-color);
+            color:var(--text-color);
             padding-bottom: 10px
         }
     }
 /*Margin-container für Menü und header*/
     .main-shell {
         margin-top: 100px;
-        margin-left: 230px;
+        margin-left: 220px;
+        margin-bottom: 10px;
 
         .main-content {
             background-color: var(--primary-color);
@@ -56,8 +57,27 @@ body {
             }
     
             hr {
-                background-color: #fff;
+                background-color: var(--trinary-color);
             }
+        }
+    }
+
+    .respi {
+        height: 500px;
+    }
+
+    footer {
+        background-color: var(--primary-color);
+        border-top: 1px solid var(--secondary-color);
+        position: absolute;
+        height: 60px;
+        display: flex;
+        width: 100%;
+        z-index: 600;
+
+        .footer-link {
+            font-size: 30px;
+            margin-left: 10px;
         }
     }
 }

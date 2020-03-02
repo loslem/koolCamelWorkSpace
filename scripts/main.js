@@ -12,4 +12,7 @@ function navscroll(target) {
 
 function toggledark() {
     document.body.classList.toggle('light');//toggle light klasse für Body
+    
 }
+
+
