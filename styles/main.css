@@ -14,10 +14,6 @@ body .banner {
   z-index: 400;
   height: 100px;
   background-color: var(--primary-color);
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
   color: var(--text-color);
   font-family: helvetica;
   text-align: center;
@@ -32,8 +28,8 @@ body .sidebar {
   position: fixed;
   width: 200px;
   height: 100vh;
-  left: 20px;
   top: 70px;
+  left: 20px;
   background-color: var(--primary-color);
   border: 1px solid var(--secondary-color);
   border-bottom: 1px solid transparent;
@@ -48,7 +44,6 @@ body .sidebar a {
 }
 
 body .main-shell {
-  margin-top: 100px;
   margin-left: 220px;
   margin-bottom: 10px;
 }
